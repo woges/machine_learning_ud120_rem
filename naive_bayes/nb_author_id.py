@@ -21,7 +21,16 @@ from email_preprocess import preprocess
 ### labels_train and labels_test are the corresponding item labels
 features_train, features_test, labels_train, labels_test = preprocess()
 
+from classify import NBAccuracy
+import matplotlib.pyplot as plt
+import numpy as np
+import pylab as pl
 
+def submitAccuracy():
+    accuracy = NBAccuracy(features_train, labels_train, features_test, labels_test)
+    return accuracy
+
+print("accuracy: "+ str(submitAccuracy()))
 
 
 #########################################################
