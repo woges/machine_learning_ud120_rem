@@ -1,0 +1,31 @@
+SVM
+training time: 		pred-time:		acc:	0,924	gamma=100 	c=0.1
+
+kNN
+training time: 0.06		pred-time:0.007		acc:	0,92	n_neigh=5 	weight=uni	alg = auto
+training time: 0.019		pred-time:0.005		acc:	0,932	n_neigh=10 	weight=uni	alg = auto
+training time: 0.007		pred-time:0.004		acc:	0,94	n_neigh = 10 	weight = dist	alg = auto
+training time: 0.011		pred-time:0.006		acc:	0,94	n_neigh = 10 	weight = dist	alg = ball-tree
+training time: 0.074		pred-time:0.011		acc:	0,94	n_neigh = 10 	weight = dist	alg = kd-tree
+training time: 0.06		pred-time:0.013		acc:	0,94	n_neigh = 10 	weight = dist	alg = brute
+training time: 0.049		pred-time:0.012		acc:	0,932	n_neigh = 100 	weight = dist	alg = auto
+
+adaboost
+training time: 0.161		pred-time:0.01		acc:	0,924
+n_estimators = 50 (auto)
+training time: 0.225		pred-time:0.024		acc:	0,924
+n_estimators = 50
+
+RandomForestClassifier
+training time: 0.052		pred-time:0.004		acc:	0,908
+(auto)
+training time: 0.064		pred-time:0.003		acc:	0,92
+min_samples_split = 10
+training time: 0.039		pred-time:0.004		acc:	0,928
+min_samples_split = 100
+training time: 0.094		pred-time:0.008		acc:	0,912
+min_samples_split = 100		max_features = 0.1
+training time: 0.051		pred-time:0.005		acc:	0,908
+min_samples_split = 100		max_features = 0.9
+training time: 0.051		pred-time:0.005		acc:	0,924
+min_samples_split = 100		max_features = 0.4
